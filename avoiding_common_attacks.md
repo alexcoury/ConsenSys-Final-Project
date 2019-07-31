@@ -18,9 +18,10 @@ The transaction ordering has no effect on the application. The transparency and 
 The application does not utilize timestamp dependence. For furture state of the application, each crowdfunding project campaign will have a fund raising deadline which can will be set by the creator. The deadline functionality will leverage an Auto Deprecation deisgn pattern to avoid the use of timestamps. This design pattern will migrate manipulation by the block miners by refraining from using timestamps.
 
 ## Integer Overflow and Underflow
-The overflow and underflow security risk is secured by a few different measures. The  
+The overflow and underflow security risk is secured by a few different measures. The uints which are at risk to be attacked by an overflow and underflow attack are in control by the owner/deployer of the contact and other addresses cannot change these variables. The only uint variable that is called by addresses other than the owner is `the contributionCount` variable which keeps track of how many supporters contribute. This variable is purely for future state UI functionality and its unlikely the number of contributions reaches the maximum uint value of (2^256). The count is incrementing so it's never exposed to the risk of a underflow attack. The `contribute()` function requires that the address is unique and not duplicate which prevents a re-entracy attack of the variable and the risk of an overflow/underflow attack. **The Application also utilizes the SafeMath.sol library for arithmetic functions.** 
 
 ## Denial of Service
+
 
 ## Denial of Service by Block Gas Limit (or startGas)
 
