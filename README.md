@@ -12,4 +12,9 @@ Only the owner of the crowdfunding campaign contract can withdraw the funds when
 ## Project Set Up
 This project is a [truffle project](https://truffleframework.com/docs/truffle/overview). Create a directory where you would like to keep this project, and move inside it with your terminal. Run the truffle command `truffle compile` and then `truffle compile`. 
 
-The ganache client should be running on `port: 7545` and on host `127.0.0.1`. 
+The ganache client test blockchain should be running on `port: 7545` and on host `127.0.0.1`. 
+
+## Tests
+Tests can be ran by using the command `truffle test` within the project directory inside your terminal.
+
+# Setup
