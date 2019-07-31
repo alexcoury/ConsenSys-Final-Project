@@ -6,13 +6,11 @@ const BN = web3.utils.BN
 contract('CrowdFunding', function(accounts){
     const firstAccount = accounts[0]
     const secondAccount = accounts[1]
-    const thirdAccount = accounts[3]
 
     const title = "title"
     const description = "description"
     const minimumContribution = 100
     const targetGoal = 1000
-    const contributorsCount = 0
     
     let instance 
 
