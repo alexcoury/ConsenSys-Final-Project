@@ -1,6 +1,6 @@
-## Common Attacks
+# Common Attacks
 
-# Re-entracy Attacks** 
+## Re-entracy Attacks 
 One of the major dangers of calling external contracts is that they can take over the control flow, and make changes to your data that the calling function wasn't expecting. The called contract may end up calling the smart contract function again in a recursive manner.
 
   **Measures**:
