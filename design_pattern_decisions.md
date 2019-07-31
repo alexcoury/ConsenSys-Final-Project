@@ -6,11 +6,11 @@
 
 **Fail early and fail loud** - The fail early and fail loud design was reinforced throughout the bootcamp lessons. Instead of using if statements that don't throw exceptions which don't make it clear if the function properly excuted or not. The application is designed with required conditions. The required conditions allow for execution as early as possible in the function body and throws an exception if the condition is not met. This is a good practice to reduce unnecessary code execution in the event that an exception will be thrown.
 
-**Restricting Access**
+**Restricting Access** - The application leverages the restricting access design to ensure only certain addresses can interact with certain functionality. Only the owner of the crowdfunding contract can toggle the Circuit Breaker in case of an emergency and only the owner can withdrawal the funds from their crowdfunding campaign. The contributors of the campaign are only allowed to contribute to the fundraise. Restricting Access ensures the correct addresses are interacting with their permitted functions.
 
-**Factory**
+**Factory** - 
 
-## Patterns not implemented but could considered later:
+## Patterns not implemented but could be considered later:
 
 **Auto Deprecation** - For furture state of the application, each crowdfunding project campaign will have a fund raising deadline which can will be set by the creator. The Auto Deprecation pattern then can be implemented to closing contracts that have expire after the fundraising deadline has passed. This design pattern will migrate manipulation by the block miners by refraining from using timestamps.
 
