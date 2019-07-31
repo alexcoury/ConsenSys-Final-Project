@@ -22,4 +22,8 @@ Tests can be ran by using the command `truffle test` within the project director
 
 **readCampaign()** - The readCampaign test ensures the campaign details return and match their appropriate fields.
 
-**contribute()** - The contribute tests a couple of things: 1. The supporter(s) funds contribute to the campaign should be greater than the minimum contribution limit the owner sets in the beginning of intialization. 2. The ability to contribute should only be enabled when the campaign is still active.
+**contribute()** - The contribute tests a couple of things: 
+1. The supporter(s) funds contribute to the campaign should be greater than the minimum contribution limit the owner sets in the beginning of intialization. 
+2. The ability to contribute should only be enabled when the campaign is still active.
+
+**withdraw()** - 
