@@ -7,7 +7,9 @@ A project campaign contains a title, description, contribution minimum, target g
 
 The contributor(s)/supporter(s) must contribute more than the minimum contribution limit that the creator sets when intializing the crowdfunding campaign. 
 
-Only the owner of the crowdfunding campaign contract can withdraw the funds when he/she desires. 
+Only the owner of the crowdfunding campaign contract can withdraw the funds when he/she desires.
+
+The application utilizes **OpenZeppelin's Safe Math library found as SafeMath.sol** in the project and imported into the CrowdFunding and CrowdFundingFactory contracts. The library is used to mitigate the common mistakes for overflow and underflow attacks.
 
 ## Project Set Up
 This project is a [truffle project](https://truffleframework.com/docs/truffle/overview). Create a directory where you would like to keep this project, and move inside it with your terminal. Run the truffle command `truffle compile` and then `truffle compile`. 
