@@ -8,13 +8,15 @@
 
 **Restricting Access** - The application leverages the restricting access design to ensure only certain addresses can interact with certain functionality. Only the owner of the crowdfunding contract can toggle the Circuit Breaker in case of an emergency and only the owner can withdrawal the funds from their crowdfunding campaign. The contributors of the campaign are only allowed to contribute to the fundraise. Restricting Access ensures the correct addresses are interacting with their permitted functions.
 
-**Factory** - 
+**Factory** - A Factory design pattern was implemented to increase the efficiency of creating and storing crowfunding campaign contracts. The Factory also ensures each crowdfunding campaign adheres to the same standard. Each CrowdFunding contract deployed through the CrowdFundingFactory represents a crowdfunding campaign project which the deployer of the contract is the creator of the campaign.
 
 ## Patterns not implemented but could be considered later:
 
 **Auto Deprecation** - For furture state of the application, each crowdfunding project campaign will have a fund raising deadline which can will be set by the creator. The Auto Deprecation pattern then can be implemented to closing contracts that have expire after the fundraising deadline has passed. This design pattern will migrate manipulation by the block miners by refraining from using timestamps.
 
 **Pull over Push Payments/Withdrawal** - For the future state of the application, a pull over push payments design could be implemented to increase security around the withdraw method. This design pattern protects against re-entrancy and denial of service attacks.
+
+**Speed Bump** - For the future state of the application, once the functionality of crowdfunding deadlines are implemented, a speed bump design could be considered. The speed bump design ensures the funds stay in the contract longer which will increase the likelihood of recovery if a malicious actions occur. 
 
 ## Patterns not considered:
 
