@@ -17,4 +17,4 @@ The ganache client test blockchain should be running on `port: 7545` and on host
 ## Tests
 Tests can be ran by using the command `truffle test` within the project directory inside your terminal.
 
-# Setup
+**Setup - 
