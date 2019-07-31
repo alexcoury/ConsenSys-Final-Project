@@ -1,6 +1,6 @@
-## Design Patterns
+# Design Patterns
 
-# Implemented Patterns:
+## Implemented Patterns:
 
 Circuit Breaker
 
@@ -10,7 +10,7 @@ Restricting Access
 
 Factory
 
-# Patterns not implemented but could consider later:
+## Patterns not implemented but could consider later:
 
 Auto Deprecation - expire crowdfund campaign after a set time
 
@@ -19,6 +19,6 @@ Pull over Push Payments - It protects against re-entrancy and denial of service 
 State Machine - Steps into
 
 
-# Patterns not considered:
+## Patterns not considered:
 Mortal - don't want owners to raise a crowdfund and erase all history by deleting it from the blockchain. Also don't want an Admin model for the system which will make the application more centralized. 
 
