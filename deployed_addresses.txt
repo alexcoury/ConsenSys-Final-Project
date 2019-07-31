@@ -1,1 +1,10 @@
+Test Network: Rinkeby
 
+CrowdFundingFactory address: 0x6f3a30aa5f03c483d4535ca24c487381bd75bdd368d6b24aa94c52e9cd25dc30
+
+Etherscan: https://rinkeby.etherscan.io/tx/0x6f3a30aa5f03c483d4535ca24c487381bd75bdd368d6b24aa94c52e9cd25dc30
+
+
+Intial Migration address: 0x45a60741fc58094dbd1ec30da855f9463c45b4f677927feddd407c646cb532e5
+
+Etherscan: https://rinkeby.etherscan.io/tx/0x45a60741fc58094dbd1ec30da855f9463c45b4f677927feddd407c646cb532e5
