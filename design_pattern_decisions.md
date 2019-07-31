@@ -2,9 +2,9 @@
 
 ## Implemented Patterns:
 
-**Circuit Breaker**
+**Circuit Breaker** - The Circuit Breaker design pattern was a required design for the project. The design pattern allows the owner/deployer of a crowdfunding campaign to toggle a freeze of contract functionality using the `circuitBreaker()` method. This functionality is desirable in case a bug is spotted which can allow the owner to freeze the contract until the bug is resolved. For my circuit breaker design, the `contribute()` and `withdraw()`functions are both frozen until the bug is explored. This design was considered due to the owner not being able to exploit their fundraise and withdraw the funds if a bug was found.
 
-**Fail early and fail loud**
+**Fail early and fail loud** - The fail early and fail loud design was reinforced throughout the bootcamp lessons. Instead of using if statements that don't throw exceptions which don't make it clear if the function properly excuted or not. The application is designed with required conditions. The required conditions allow for execution as early as possible in the function body and throws an exception if the condition is not met. This is a good practice to reduce unnecessary code execution in the event that an exception will be thrown.
 
 **Restricting Access**
 
