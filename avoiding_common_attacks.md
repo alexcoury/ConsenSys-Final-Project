@@ -21,9 +21,10 @@ The application does not utilize timestamp dependence. For furture state of the 
 The overflow and underflow security risk is secured by a few different measures. The uints which are at risk to be attacked by an overflow and underflow attack are in control by the owner/deployer of the contact and other addresses cannot change these variables. The only uint variable that is called by addresses other than the owner is `the contributionCount` variable which keeps track of how many supporters contribute. This variable is purely for future state UI functionality and its unlikely the number of contributions reaches the maximum uint value of (2^256). The count is incrementing so it's never exposed to the risk of a underflow attack. The `contribute()` function requires that the address is unique and not duplicate which prevents a re-entracy attack of the variable and the risk of an overflow/underflow attack. **The Application also utilizes the SafeMath.sol library for arithmetic functions.** 
 
 ## Denial of Service
-
+The current system design does not have any known risk for a DoS attack on the two contracts. The `CrowdFunding.sol` solely depends on the `CrowdFundingFactory` which creates a new instance of a crowdfunding campaign contract. However, in the future state of the application it can be at risk for a DoS attack once a refund function is implemented. The refund function needs to utilize the Pull over Push Payments/Withdrawal design pattern. 
 
 ## Denial of Service by Block Gas Limit (or startGas)
+The current system design only leverages one loop which is vulnerable to a Denial of Service block gas limit attack. The function `getDeployedCampaigns` displays a list of all of the campaigns created once deployed. The measures to ensure safety of the unknown sized array could take mutiple blocks to ensure safety and checks to see if the gas limit has been exceeded by 200000. The `nextCampaignIndex` variable keeps track of the current place in the array the function is reading. 
 
 ## Force Sending Ether
-
+No logic or calulations are being based on the contract's balance. The only functions ulitizing the contract balance is the withdraw and contribute functions. Which soley is used to build the contract balance and deposit to the owner/deployer once the campaign is made inactive. 
