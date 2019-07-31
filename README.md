@@ -16,6 +16,8 @@ This project is a [truffle project](https://truffleframework.com/docs/truffle/ov
 
 The ganache client test blockchain should be running on `port: 7545` and on host `127.0.0.1`. 
 
+The project has also been deployed on the Rinkeby Test Network. I used Infra and Truffle to deploy to the test network. More information can be found in the deployed_addresses.txt file.
+
 ## Tests
 Tests can be ran by using the command `truffle test` within the project directory inside your terminal.
 
